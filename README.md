@@ -17,8 +17,8 @@ my implementation was optimized for speed over memory. When the TextSearcher is 
 
 
 ### Data Structures
-- **contentTokens** is a String array that contains all of the words (as a word is defined in the problem statement) inside of the file. All words are in ordered according to where they appear in the file.
-- **punctuationTokens** is a String array that contains all of the punctiation (all spaces and punctuation marks in-between words) in the file. All punctuation are in ordered according to where they appear in the file.
+- **contentTokens** is a String array that contains all of the words (as a word is defined in the problem statement) inside of the file. All words are ordered according to where they appear in the file.
+- **punctuationTokens** is a String array that contains all of the punctiation (all spaces and punctuation marks in-between words) in the file. All punctuation are ordered according to where they appear in the file.
 - **wordToIndexMap** is a HashMap that maps a queryWord to a LinkedList that contains all of the indices where that queryWord appears in **contentTokens**.
 - **resultsCache** is a HashMap that links a queryWord concatinated with its contextWords number to a String array in order to provide a cached answer if we have searched for that queryWord and contextWords number combination before.
 
