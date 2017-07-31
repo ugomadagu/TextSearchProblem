@@ -25,7 +25,7 @@ my implementation was optimized for speed over memory. When the TextSearcher is 
 ### High Level Algorithm Explanation
 - Set up
   * We use regular expressions to populate **contentTokens** and **punctuationTokens**. 
-  * For every word in **contentTokens**, we use **wordToIndexMap** to keep track of every index where that word was found.
+  * We loop through **contentTokens** once and for every word in **contentTokens**, we use **wordToIndexMap** to keep track of every index where that word was found.
   * Initialize **resultsCache** to an empty HashMap.
 - Searching
   * Check if we have a mapping for the queryWord in **wordToIndexMap**. If not, return an empty array. If we do, proceed.
